@@ -1,3 +1,6 @@
+# Proyecto Github
+# Primer Archivo: app.py
+
 from flask import Flask, request, jsonify
 import mysql.connector
 import os
@@ -28,6 +31,7 @@ def formulario():
         cursor.execute(query, (nombre, apellido))
 
         conn.commit()
+
         cursor.close()
         conn.close()
 
